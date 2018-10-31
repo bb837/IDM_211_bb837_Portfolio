@@ -1,3 +1,76 @@
 html {
   font-size: 100%
 }
+
+a:visited {
+  color: #fd4445
+}
+
+/* WEBSITE COLORS
+     pink= #fd4445
+     white= OFF WHITE PERHAPS
+     orange= #ffaf00
+     light blue= #0091cf
+     dark blue= #01395e
+*/
+
+/* FONTS
+font-family: 'bebas-neue-by-fontfabric', sans-serif;
+font-weight: 300/400/
+font-style: normal/ bold
+*/
+
+/* HEADER */
+
+header {
+  background-color: #01395e;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.125em;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  text-align: left;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+}
+  /* If I wanted to make this in one line- what do i do */
+
+/* MAIN*/
+
+main {
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125em;
+  color: #01395e;
+}
+
+h1 {
+  color: #ffaf00;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 6600;
+  font-style: normal;
+}
+
+h2 {
+  font-weight: 600;
+  color: #fd4445;
+}
+
+h3 {
+  color: #0091cf;
+  font-weight: 400;
+}
+
+
+footer {
+  background-color: #01395e;
+  color: #ffffff;
+  text-indent: inherit;
+}
