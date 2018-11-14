@@ -6,12 +6,17 @@ a:visited {
   color: #F8B195;
 }
 
-a:hover {
+a:hover
+a.focus {
   color: #F8B195;
 }
 
 a:active {
   color: #F8B195;
+
+* {
+    box-sizing: border-box;
+  }
 }
 /* WEBSITE COLORS
      pastel pink= #F8B195
@@ -36,7 +41,37 @@ header {
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
   font-weight: 400;
   font-style: normal;
+  position: sticky;
   text-align: left;
+  top: 0;
+  z-index: 30;
+}
+
+#logo {
+  margin: .25rem;
+  padding: .25rem;
+}
+
+#hamburger_icon {
+  float: right;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+#portrait {
+  position: relative;
+}
+
+#figcaption_test {
+  margin: .5rem;
+  position: absolute;
+  z-index: 20;
+  top: -3rem;
+}
+
+.image_box {
+  margin-top: 0;
 }
 
 nav {
@@ -65,6 +100,7 @@ h2 {
 h3 {
   color: #F67280;
   font-weight: 400;
+  margin: .5rem;
 }
 
 main {
