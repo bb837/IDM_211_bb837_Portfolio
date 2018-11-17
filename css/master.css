@@ -1,3 +1,6 @@
+
+/*            DOCUMENT           */
+
 html {
   font-size: 100%;
 }
@@ -18,24 +21,38 @@ a:active {
     box-sizing: border-box;
   }
 }
-/* WEBSITE COLORS
-     pastel pink= #F8B195
-     light pink= #F67280
-     purple= #C06C84
-     dark purple= #6C5B7B
-     dark blue= #355C7D
+
+/*   WEBSITE COLORS
+                 pastel pink= #F8B195
+                 light pink= #F67280
+                 purple= #C06C84
+                 dark purple= #6C5B7B
+                 dark blue= #355C7D
 */
 
 /* FONTS
-font-family: 'bebas-neue-by-fontfabric', sans-serif;
-font-weight: 300/400/
-font-style: normal/ bold
+              font-family: 'bebas-neue-by-fontfabric', sans-serif;
+              font-weight: 300/400/
+              font-style: normal/ bold
+
+        CHOOSE SECONDARY FONT
 */
 
-/* HEADER */
+/* Permalink - GRADIENT
+
+Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4efde+0,f7d3c5+100
+background: #f4efde; /* Old browsers
+background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15
+background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6
+background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
+
+
+/*              HEADER               */
 
 header {
   background-color: #355C7D;
+  box-shadow: 0 .3125rem .625rem #717171;
   color: #ffffff;
   font-size: 1.125rem;
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
@@ -44,11 +61,12 @@ header {
   position: sticky;
   text-align: left;
   top: 0;
+  width: 100%;
   z-index: 30;
 }
 
 #logo {
-  margin: .25rem;
+  margin: auto;
   padding: .25rem;
 }
 
@@ -57,6 +75,21 @@ header {
   margin-bottom: .5rem;
   margin-top: 1rem;
   padding: .5rem;
+}
+
+/*              MAIN               */
+
+main {
+  background: #f4efde; /* Old browsers */
+  background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
+  color: black;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: normal;
 }
 
 #portrait {
@@ -74,6 +107,47 @@ header {
   margin-top: 0;
 }
 
+/*         TEXT           */
+
+h1 {
+  color: #6C5B7B;
+  font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+h2 {
+  color: #C06C84;
+  font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 600;
+  margin: 1rem 1rem;
+}
+
+h3 {
+  color: #F67280;
+  font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  margin: .5rem 1.875rem;
+  padding-left: .5rem auto;
+}
+
+h4 {
+  margin: .5rem 1rem;
+}
+
+p {
+  color: black;
+  font: 1rem/1.5rem arial, sans-serif;
+  margin: .2rem 1rem;
+  padding: auto 1rem;
+}
+
+li {
+  font: 1rem/1.2rem arial, sans-serif;
+}
+
+/*         NAV             */
+
 nav {
   color: #ffffff;
   font-family: 'bebas-neue-by-fontfabric', sans-serif;
@@ -81,38 +155,93 @@ nav {
   font-style: normal;
   text-align: left;
 }
-  /* If I wanted to make this in one line- what do i do */
 
-/* MAIN*/
+#index_button,
+#resume_button,
+#portfolio_button {
+  background-color: #C06C84;
+  border-radius: 2rem;
+  box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  float:left;
 
-h1 {
-  color: #6C5B7B;
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
-  font-style: normal;
-  font-weight: 6600;
+  font: 1rem/1.2rem arial, sans-serif;
+  font-size: 1.2rem;
+  margin: .125rem 2.5rem;
+  padding: 1rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
 }
 
-h2 {
-  color: #C06C84;
-  font-weight: 600;
+nav ul {
+  padding: 0;
 }
 
-h3 {
-  color: #F67280;
-  font-weight: 400;
-  margin: .5rem;
+a#icon {
+    border-radius: .125rem;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1.2rem;
 }
 
-main {
-  color: black;
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  font-style: normal;
+span.bar {
+  background-color: #fff;
+  border-radius: .125rem;
+  clear: both;
+  display: block;
+  height: .25rem;
+  margin-bottom: .4rem;
+  width: 3rem;
+}
+
+#button {
+  background-color: #C06C84;
+  border-radius: 2rem;
+  box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  font: 1rem/1.2rem arial, sans-serif;
+  font-size: 1.2rem;
+  margin: .125rem 2.5rem;
+  padding: 1rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*how to fix the padding of the text so that the WHOLE BUTTON works
+how to change the font to SECONDARY FONT no underline*/
+
+
+/*          IMAGES    ???         */
+
+figure.figure {
+  background-color: #F8B195;
+  float: left;
+  height: 12rem;
+  margin: 3rem .5rem;
+  padding-left: 2rem;
+  width: 20rem;
+}
+
+.figcaption {
+  float: right;
+  text-align: right;
+}
+
+#placeholder_img,
+#placeholder_img_02 {
+  margin: 1.5rem auto;
+  padding: 1rem;
+}
+
+.art {
+  margin: 1rem 2rem;
+  paddinhg: .5rem .5rem;
 }
 
 footer {
   background-color: #355C7D;
+  clear: both;
   color: #ffffff;
+  position: relative;
   text-indent: inherit;
 }

@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
 
-  <body>
+  <main>
     <header>
+        <!--
         <div class="My_Name">
             <h1>Brianna Buissereth</h1>
         </div>
-        <img src="img/Buissereth_logo.png" alt="Logo">
+        -->
+      <img id="logo" src="img/Buissereth_logo_v002.png" alt="b.">
 
-      <nav>
-      <!--Create Hamburger Icon, however that works-->
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Resume.html">Resume<a/></li>
-          <li><a href="portfolio.html">Portflolio</a></li>
-        <!--NESTED LIST ITEM: Digital Portflolio and Analog Portflolio-->
-      </ul>
-    </nav>
+      <a id=icon href="#nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+
+      <!--<img id="hamburger_icon" src="https://via.placeholder.com/50x50?text=hamburger_icon" alt="hamburger_icon">
+      -->
     </header>
 
         <h1>Resume</h1>
@@ -67,13 +68,16 @@
 
             <h2>Work/Volunteer</h2>
 
-              <h3>Manager of the Vital Medical Care Practice</h3>
+              <h3>Web Designer of the Vital Medical Care Practice</h3>
 
-                <p><span>20 East 46th St., 9th Floor New York, NY 10017</span>
-                <span>320 Post Ave. Suite 102 Westbury, NY 11590</span>
-                <span>131 Sunnyside Blvd. Suite 100 Plainview, NY 11803</span>
-                <span>Tel.:(212)981-4388</span>
-                <span>Tel.:347-276-0485</span></p>
+                <p>20 East 46th St., 9th Floor New York, NY 10017</p>
+                <p>320 Post Ave. Suite 102 Westbury, NY 11590</p>
+                <p>131 Sunnyside Blvd. Suite 100 Plainview, NY 11803</p>
+                <p>el.:(212)981-4388 Tel.:347-276-0485</p>
+
+                    <h3>Coming soon</h3>
+
+                    <img id="placeholder_img " src="https://via.placeholder.com/300x300?text=Coming_Soon" alt="VMC">
 
               <h3>Project Manager of Virgin Mimosa Studios</h3>
 
@@ -81,9 +85,15 @@
                 <span>Philadelphia, PA 19104</span></p>
                 <!-- Add more shit here-->
 
+                <h3>Coming soon</h3>
+
+                <img id="placeholder_img_02 " src="https://via.placeholder.com/300x300?text=Coming_Soon" alt="VMC">
+
+            <h2>Work Examples/Pictures</h2>
+
             <h2>Media</h2>
-                <div class="Button">
-                  <a href="portfolio.html">Portfolio</a>
+                <div id="button">
+                  <a href="portfolio.html">View My Work</a>
                     <!-- ADD THIS SHIT LATER-->
                 </div>
 
@@ -101,5 +111,23 @@
 
                 <span>bb837@drexel.edu</span></p>
           </div>
-  </body>
+  </main>
+
+  <nav id="nav">
+  <!--Create Hamburger Icon, however that works-->
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Resume.html">Resume<a/></li>
+      <li><a href="portfolio.html">Portflolio</a></li>
+    <!--NESTED LIST ITEM: Digital Portflolio and Analog Portflolio-->
+  </ul>
+</nav>
+
+<footer>
+  <h3>Contact Information</h3>
+  <p>stuff and things</p>
+
+  <h4>&copy; 2018</h4>
+  <!--more stuff here-->
+</footer>
 </html>
