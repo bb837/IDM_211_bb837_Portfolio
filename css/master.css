@@ -3,13 +3,14 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 a:visited {
   color: #F8B195;
 }
 
-a:hover
+a:hover,
 a.focus {
   color: #F8B195;
 }
@@ -36,6 +37,8 @@ a:active {
               font-style: normal/ bold
 
         CHOOSE SECONDARY FONT
+
+        font-family: 'Roboto Condensed', sans-serif;
 */
 
 /* Permalink - GRADIENT
@@ -66,8 +69,10 @@ header {
 }
 
 #logo {
-  margin: auto;
-  padding: .25rem;
+  height: 70px;
+  /*margin: 4.38rem;
+  padding: .25rem;*/
+  width: 70px;
 }
 
 #hamburger_icon {
@@ -92,8 +97,15 @@ main {
   font-style: normal;
 }
 
+.About {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
 #portrait {
+  display: block;
   position: relative;
+  margin: 2rem auto;
 }
 
 #figcaption_test {
@@ -136,10 +148,19 @@ h4 {
 }
 
 p {
-  color: black;
-  font: 1rem/1.5rem arial, sans-serif;
-  margin: .2rem 1rem;
+  color: #160538;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5rem;
+  margin: 1rem 2rem;
   padding: auto 1rem;
+}
+
+.paragraph_text {
+  text-indent: 3rem;
+}
+
+.centered {
+  text-align: center;
 }
 
 li {
@@ -162,11 +183,10 @@ nav {
   background-color: #C06C84;
   border-radius: 2rem;
   box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.2);
-  float:left;
-
+  display: block;
   font: 1rem/1.2rem arial, sans-serif;
   font-size: 1.2rem;
-  margin: .125rem 2.5rem;
+  margin: 1rem 3rem;
   padding: 1rem 1.3rem;
   text-align: center;
   text-decoration: none;
@@ -229,8 +249,10 @@ figure.figure {
 
 #placeholder_img,
 #placeholder_img_02 {
+  display: block;
   margin: 1.5rem auto;
   padding: 1rem;
+  width: auto;
 }
 
 .art {
