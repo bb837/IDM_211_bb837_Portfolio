@@ -1,3 +1,19 @@
+/*        TABLE OF CONTENTS          */
+/*
+ DOCUMENT/HTML
+ WEBSITE COLORS (commented out)
+ FONTS (commented out)
+ GRADIENT (BG) (commented out)
+ TEXT
+ HEADER
+ MAIN/BODY
+ NAV
+ FOOTER
+ INDEX SPECS
+ RESUME SPECS
+ GALLERY/IMAGES SPECS
+  */
+
 
 /*            DOCUMENT/HTML           */
 
@@ -17,15 +33,16 @@ a.focus {
 
 a:active {
   color: #F8B195;
-
-a{
   text-decoration: none;
 }
 
+/*a: {
+  text-decoration: none;
+}*/
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
-}
 
 /*   WEBSITE COLORS
                  pastel pink= #F8B195
@@ -54,89 +71,6 @@ background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-2
 background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
 
-
-/*              HEADER               */
-
-header {
-  background-color: #355C7D;
-  box-shadow: 0 .3125rem .625rem #717171;
-  color: #ffffff;
-  position: sticky;
-  text-align: left;
-  top: 0;
-  width: 100%;
-  z-index: 30;
-}
-
-#logo {
-  height: 70px;
-  margin: .1rem 1.125rem;
-  padding: .5rem .25rem;
-  width: 70px;
-
-}
-
-#hamburger_icon {
-  float: right;
-  margin: 1rem 1.125rem;
-  padding: .5rem;
-}
-
-/*              MAIN/BODY              */
-
-main {
-  background: #f4efde; /* Old browsers */
-  background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
-  color: black;
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  font-style: normal;
-}
-
-/*              INDEX SPECS              */
-
-#portrait {
-  display: block;
-  position: relative;
-  margin: .5rem auto;
-}
-
-.about_caption {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-/*#figcaption_test {
-  margin: .5rem;
-  position: absolute;
-  z-index: 20;
-  top: -3rem;
-}*/
-
-/*         RESUME SPECS          */
-
-.resume_info h3 {
-  color: #F67280;
-  font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
-  font-weight: 400;
-  margin: .5rem 2rem;
-}
-
-.resume_info h2 {
-  margin-top: 1.5rem;
-}
-
-.email {
-  line-height: 2rem;
-  margin: .5rem 3rem;
-  color: #1e0e40;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 /*         TEXT           */
 
 h1 {
@@ -161,7 +95,10 @@ h3 {
 }
 
 h4 {
-  margin: .5rem 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  margin: .5rem 3.4rem;
+
 }
 
 p.paragraph_text {
@@ -203,6 +140,49 @@ ul.bulleted_list li::before {
   margin-left: -1rem;
 }
 
+/*              HEADER               */
+
+header {
+  background-color: #355C7D;
+  box-shadow: 0 .3125rem .625rem #717171;
+  color: #ffffff;
+  position: sticky;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+#logo {
+  height: 70px;
+  margin: .1rem 1.125rem;
+  padding: .5rem .25rem;
+  width: 70px;
+}
+
+a#icon {
+    border-radius: .125rem;
+    display: block;
+    position: absolute;
+    top: 1.75rem;
+    right: 1.2rem;
+}
+
+/*              MAIN/BODY              */
+
+main {
+  background: #f4efde; /* Old browsers */
+  background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
+  color: black;
+  font-family: 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: normal;
+}
+
 /*         NAV             */
 
 nav {
@@ -215,7 +195,7 @@ nav {
 
 #index_button,
 #resume_button,
-#portfolio_button {
+#gallery_button {
   background-color: #C06C84;
   border-radius: 2rem;
   box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.2);
@@ -231,14 +211,6 @@ nav {
 
 nav ul {
   padding: 0;
-}
-
-a#icon {
-    border-radius: .125rem;
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 1.2rem;
 }
 
 span.bar {
@@ -264,11 +236,71 @@ span.bar {
   display: inline-block;
 }
 
-/*how to fix the padding of the text so that the WHOLE BUTTON works
-how to change the font to SECONDARY FONT no underline*/
+/*         FOOTER           */
+
+footer {
+  background-color: #355C7D;
+  clear: both;
+  color: #ffffff;
+  margin: auto;
+  position: relative;
+  text-indent: inherit;
+}
+
+/*              INDEX SPECS              */
+
+#portrait {
+  display: block;
+  position: relative;
+  margin: .5rem auto;
+  width: 220px;
+}
+
+.about_caption {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/*         RESUME SPECS          */
+
+.resume_info h3 {
+  color: #F67280;
+  font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: bold;
+  margin: .5rem 2rem;
+}
+
+.resume_info h2 {
+  margin-top: 1.5rem;
+}
+
+.email {
+  line-height: 2rem;
+  margin: .5rem 3rem;
+  color: #1e0e40;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.job_1,
+.job_2 {
+  margin-bottom: 3rem;
+}
+
+#vital_medical_care,
+#virgin_mimosa {
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+  display: block;
+  position: relative;
+  margin: 1.5rem auto .5rem;
+}
+
+.resume_centered {
+  text-align: center;
+}
 
 
-/*          IMAGES    ???         */
+/*         GALLERY/IMAGES SPECS         */
 
 /*figure.figure {
   background-color: #F8B195;
@@ -279,14 +311,28 @@ how to change the font to SECONDARY FONT no underline*/
   width: 20rem;
 }*/
 
-figure.figure {
-  border-radius: 1rem;
-  margin: .75rem .75rem;
+figure {
+  margin: 0;
+}
+.art {
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+  display: block;
+  position: relative;
+  margin: 1.5rem auto .5rem;
 }
 
+
 .figcaption {
-  float: right;
-  text-align: right;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.figcaption
+h3,
+h4,
+p {
+  margin: auto 2rem;
 }
 
 #placeholder_img,
@@ -297,16 +343,14 @@ figure.figure {
   width: auto;
 }
 
-.art {
-  margin: 1rem 2rem;
-  paddinhg: .5rem .5rem;
+.gallery_centered {
+  text-align: center;
 }
 
-footer {
-  background-color: #355C7D;
-  clear: both;
-  color: #ffffff;
-  margin: auto;
+video {
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+  display: block;
   position: relative;
-  text-indent: inherit;
+  margin: 1.5rem auto .5rem;
 }
