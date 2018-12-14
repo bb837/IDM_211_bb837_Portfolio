@@ -1,22 +1,26 @@
 
-/*            DOCUMENT           */
+/*            DOCUMENT/HTML           */
 
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
 
-a:visited {
+a:visited, a:link {
   color: #F8B195;
 }
 
 a:hover,
 a.focus {
-  color: #F8B195;
+  color: #F67280;
 }
 
 a:active {
   color: #F8B195;
+
+a{
+  text-decoration: none;
+}
 
 * {
     box-sizing: border-box;
@@ -57,10 +61,6 @@ header {
   background-color: #355C7D;
   box-shadow: 0 .3125rem .625rem #717171;
   color: #ffffff;
-  font-size: 1.125rem;
-  font-family: 'bebas-neue-by-fontfabric', sans-serif;
-  font-weight: 400;
-  font-style: normal;
   position: sticky;
   text-align: left;
   top: 0;
@@ -70,19 +70,19 @@ header {
 
 #logo {
   height: 70px;
-  /*margin: 4.38rem;
-  padding: .25rem;*/
+  margin: .1rem 1.125rem;
+  padding: .5rem .25rem;
   width: 70px;
+
 }
 
 #hamburger_icon {
   float: right;
-  margin-bottom: .5rem;
-  margin-top: 1rem;
+  margin: 1rem 1.125rem;
   padding: .5rem;
 }
 
-/*              MAIN               */
+/*              MAIN/BODY              */
 
 main {
   background: #f4efde; /* Old browsers */
@@ -97,26 +97,44 @@ main {
   font-style: normal;
 }
 
-.About {
-  margin-bottom: 3rem;
-  text-align: center;
-}
+/*              INDEX SPECS              */
 
 #portrait {
   display: block;
   position: relative;
-  margin: 2rem auto;
+  margin: .5rem auto;
 }
 
-#figcaption_test {
+.about_caption {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/*#figcaption_test {
   margin: .5rem;
   position: absolute;
   z-index: 20;
   top: -3rem;
+}*/
+
+/*         RESUME SPECS          */
+
+.resume_info h3 {
+  color: #F67280;
+  font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
+  font-weight: 400;
+  margin: .5rem 2rem;
 }
 
-.image_box {
-  margin-top: 0;
+.resume_info h2 {
+  margin-top: 1.5rem;
+}
+
+.email {
+  line-height: 2rem;
+  margin: .5rem 3rem;
+  color: #1e0e40;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*         TEXT           */
@@ -132,39 +150,57 @@ h2 {
   color: #C06C84;
   font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
   font-weight: 600;
-  margin: 1rem 1rem;
+  margin: .5rem 1.2rem;
 }
 
 h3 {
   color: #F67280;
-  font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
+  font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
   font-weight: 400;
   margin: .5rem 1.875rem;
-  padding-left: .5rem auto;
 }
 
 h4 {
   margin: .5rem 1rem;
 }
 
-p {
-  color: #160538;
+p.paragraph_text {
+  color: #1e0e40;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5rem;
-  margin: 1rem 2rem;
-  padding: auto 1rem;
+  margin: .75rem 1.25rem;
 }
 
-.paragraph_text {
-  text-indent: 3rem;
+p {
+  color: #1e0e40;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5rem;
+  margin: .5rem 2rem;
 }
+
+/*.paragraph_text {
+  text-indent: 3rem;
+}*/
 
 .centered {
   text-align: center;
 }
 
 li {
-  font: 1rem/1.2rem arial, sans-serif;
+  color: #1e0e40;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.2rem;
+  list-style: none;
+  margin: .5rem 2rem;
+}
+
+ul.bulleted_list li::before {
+  content: "\2022";
+  color: #6C5B7B;
+  font-weight: 900;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 /*         NAV             */
@@ -186,10 +222,11 @@ nav {
   display: block;
   font: 1rem/1.2rem arial, sans-serif;
   font-size: 1.2rem;
-  margin: 1rem 3rem;
+  margin: 1rem auto;
   padding: 1rem 1.3rem;
   text-align: center;
   text-decoration: none;
+  width: 16rem;
 }
 
 nav ul {
@@ -233,13 +270,18 @@ how to change the font to SECONDARY FONT no underline*/
 
 /*          IMAGES    ???         */
 
-figure.figure {
+/*figure.figure {
   background-color: #F8B195;
   float: left;
   height: 12rem;
   margin: 3rem .5rem;
   padding-left: 2rem;
   width: 20rem;
+}*/
+
+figure.figure {
+  border-radius: 1rem;
+  margin: .75rem .75rem;
 }
 
 .figcaption {
@@ -264,6 +306,7 @@ footer {
   background-color: #355C7D;
   clear: both;
   color: #ffffff;
+  margin: auto;
   position: relative;
   text-indent: inherit;
 }
